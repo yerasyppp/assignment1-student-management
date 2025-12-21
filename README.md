@@ -30,3 +30,19 @@ This project is a Java-based Student Management System designed to demonstrate c
 1. Navigate to the source directory:
    ```bash
    cd src
+
+## D. Screenshots
+Here is the execution result of the program:
+
+![Program Output](docs/screenshots/output.png)
+
+## E. Reflection Section
+
+**What I Learned:**
+I learned how to create classes and objects in Java. I also understood how to use arrays to store multiple students inside a Course object. It was interesting to see how different classes can work together.
+
+**Challenges Faced:**
+The hardest part was working with the array of students. I had to remember to check if a student was `null` before calculating the average GPA, otherwise the program crashed. Fixing these errors took some time.
+
+**Benefits of OOP:**
+Using `private` fields helped me protect the data, so no one can set a negative GPA. Also, splitting the code into Student and Course classes made the project much easier to read and organize compared to writing everything in one file.
