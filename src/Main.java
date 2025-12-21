@@ -2,17 +2,17 @@ public class Main {
     public static void main(String[] args) {
         // --- Part 1: Object Creation & Testing ---
         Student s1 = new Student("Alice Johnson", "S101", "CS");
-        Student s2 = new Student("Bob Smith", "S102", "Math");
-        Student s3 = new Student("Charlie Brown", "S103", "Physics");
+        Student s2 = new Student("Bob Smith", "S102", "SE");
+        Student s3 = new Student("Charlie Brown", "S103", "SE");
 
         // Modify GPA and credits
-        s1.updateGPA(3.8);
+        s1.updateGPA(2.8);
         s1.addCredits(30);
 
-        s2.updateGPA(3.2);
+        s2.updateGPA(3.1);
         s2.addCredits(15);
 
-        s3.updateGPA(3.9);
+        s3.updateGPA(2.3);
         s3.addCredits(45);
 
         // Print student details
@@ -22,7 +22,7 @@ public class Main {
         System.out.println(s3);
 
         // Create Course and add students
-        Course javaCourse = new Course("Intro to Java", "Prof. Turing", 5);
+        Course javaCourse = new Course("Object-Oriented Programming", "Ms. Aidana", 5);
         javaCourse.addStudent(s1, 0);
         javaCourse.addStudent(s2, 1);
         javaCourse.addStudent(s3, 2);
@@ -40,15 +40,15 @@ public class Main {
         students[0] = s1;
         students[1] = s2;
         students[2] = s3;
-        students[3] = new Student("Diana Prince", "S104", "Engineering");
-        students[3].updateGPA(4.0);
+        students[3] = new Student("Diana Prince", "S104", "CS");
+        students[3].updateGPA(3.5);
         students[3].addCredits(60);
 
-        students[4] = new Student("Evan Wright", "S105", "History");
+        students[4] = new Student("Evan Wright", "S105", "BIT");
         students[4].updateGPA(2.5);
         students[4].addCredits(10);
 
-        System.out.println("Top Student: " + getTopStudent(students).getName());
+        System.out.println("Top Student - " + getTopStudent(students).getName());
         System.out.println("Honors Count: " + countHonors(students));
         System.out.println("Total Credits: " + totalCredits(students));
     }

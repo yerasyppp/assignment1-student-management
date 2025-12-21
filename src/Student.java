@@ -1,4 +1,3 @@
-// Represents a student with personal and academic info
 public class Student {
     private String name;
     private String id;
@@ -35,21 +34,21 @@ public class Student {
         }
     }
 
-    // Updates GPA if within valid range (0.0 - 4.0)
+    // Updates GPA in range (0.0 - 4.0)
     public void updateGPA(double newGPA) {
         if (newGPA >= 0.0 && newGPA <= 4.0) {
             this.gpa = newGPA;
         }
     }
 
-    // Returns true if student has Honors status (GPA >= 3.5)
+    // Returns true if student has Honors status
     public boolean isHonors() {
         return this.gpa >= 3.5;
     }
 
     @Override
     public String toString() {
-        return "Student [Name: " + name + ", ID: " + id + ", Major: " + major +
+        return "Student Name - " + name + ", ID: " + id + ", Major - " + major +
                 ", GPA: " + String.format("%.2f", gpa) + ", Credits: " + credits + "]";
     }
 }
