@@ -1,4 +1,6 @@
 public class Main {
+    private static Object OOPCourse;
+
     public static void main(String[] args) {
         // --- Part 1: Object Creation & Testing ---
         Student s1 = new Student("Alice Johnson", "S101", "CS");
@@ -22,16 +24,16 @@ public class Main {
         System.out.println(s3);
 
         // Create Course and add students
-        Course javaCourse = new Course("Object-Oriented Programming", "Ms. Aidana", 5);
-        javaCourse.addStudent(s1, 0);
-        javaCourse.addStudent(s2, 1);
-        javaCourse.addStudent(s3, 2);
+        Course OOPCourse = new Course("Object-Oriented Programming", "Ms. Aidana", 5);
+        OOPCourse.addStudent(s1, 0);
+        OOPCourse.addStudent(s2, 1);
+        OOPCourse.addStudent(s3, 2);
 
         // Print Course stats
         System.out.println("\n--- Course Summary ---");
-        System.out.println(javaCourse);
-        System.out.printf("Course Avg GPA: %.2f%n", javaCourse.courseAverageGPA());
-        System.out.println("Highest Credit Student: " + javaCourse.highestCreditStudent().getName());
+        System.out.println(OOPCourse);
+        System.out.printf("Course Avg GPA: %.2f%n", OOPCourse.courseAverageGPA());
+        System.out.println("Highest Credit Student: " + OOPCourse.highestCreditStudent().getName());
 
         // --- Part 2: Array Processing (Static Methods) ---
         System.out.println("\n--- Part 2: Data Processing ---");
