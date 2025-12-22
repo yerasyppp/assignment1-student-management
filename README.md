@@ -28,8 +28,14 @@ This project is a Java-based Student Management System designed to demonstrate c
 ## C. Instructions to Compile and Run
 
 1. Navigate to the source directory:
-   ```bash
+    ```bash
    cd src
+  ```bash
+   javac *.java
+   ```
+  ```bash
+   java Main
+   ```
 
 ## D. Screenshots
 Here is the execution result of the program:
